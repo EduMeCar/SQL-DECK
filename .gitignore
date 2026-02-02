@@ -1,0 +1,33 @@
+# Docosaurus
+.docusaurus/
+build/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependencies
+package-lock.json
+yarn.lock
+
+# Generated files
+.cache/
+.yarn
+
+# Environment variables
+.env
+.env.local
+
+# Misc
+.history/
+.eslintcache
