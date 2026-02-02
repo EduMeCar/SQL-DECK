@@ -1,0 +1,29 @@
+{
+  "name": "sql-deck",
+  "version": "1.0.0",
+  "description": "Un mazo de cartas educativas para dominar SQL desde cero, paso a paso",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
+    "@docusaurus/module.exports": "^2.4.1",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.4.1",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.2.1",
+    "prism-react-renderer": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@docusaurus/module.exports": "^2.4.1"
+  }
+}
