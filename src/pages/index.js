@@ -1,0 +1,50 @@
+import React from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import styles from './index.module.css';
+
+function HomepageHeader() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            Comenzar a Aprender SQL 🎯
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <Layout
+      title={`Inicio`}
+      description="Un mazo de cartas educativas para dominar SQL desde cero, paso a paso">
+      <HomepageHeader />
+      <main>
+        <div className="container" style={{padding: '2rem 0'}}>
+          <div className="row">
+            <div className="col col--12">
+              <h2>¿Por qué SQL-DECK?</h2>
+              <p>
+                SQL-DECK es un toolkit educativo que convierte el aprendizaje de SQL
+                en algo tangible, modular y divertido. Aprende con cartas temáticas
+                diseñadas para desarrolladores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </Layout>
+  );
+}
